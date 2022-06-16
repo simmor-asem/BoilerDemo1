@@ -1,0 +1,200 @@
+Name: EthernetIPStation
+Id: g=d3f86636d527f9c9f7b18deed51ad1c5
+Type: EthernetIPDriverStation
+Children:
+- Name: MaximumJobSizeInBytes
+  Id: g=02d18686db6ce01ca4b60c33f09eab9a
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 504
+- Name: IPAddress
+  Id: g=1e0b1a01ddfca08c597e44e43b0f47d2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "192.168.137.199"
+- Name: Port
+  Id: g=09a68441e5c83b02346880b16e2185f9
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 44818
+- Name: Timeout
+  Id: g=6216a9670a93430167395c58121c92c5
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:01:0.0000000"
+- Name: PhysicalAddressOptimization
+  Id: g=82542e2a6525d2bcac8a7185fbc13f03
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: OperationCode
+  Id: g=1c76a56a3de81e821905367d062c05fd
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+  Value: 0
+- Class: Reference
+  Target: ns=31;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=31;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=31;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=31;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=31;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=31;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Id: g=845cc305e73710b2b2d3cf8faba8beb2
+  Type: BaseObjectType
+  Children:
+  - Name: TankUDT
+    Id: g=1a395ecec3c5eef6a2467a57092ef0b6
+    Supertype: TagStructure
+    Children:
+    - Name: ValveInStatus
+      Id: g=3c36d7ff7e3bbeeb7db567f68df99d64
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8b74f08501038757985740c65ef57677
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ValveInStatus"
+      - Name: Quality
+        Id: g=4bfbfad3393ff6819f462d69a6296bb4
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=6b1af03566425347dd719c8cdf7f61d3
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: ValveInCmd
+      Id: g=5cf7a67a6a54ebbc0f0899b0c1853af5
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a35d88ed861708ea22cc24d60969585c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ValveInCmd"
+      - Name: Quality
+        Id: g=40e63342d42da9fb877668398a2081e1
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=b13f3f257cb249a947c3942a61597458
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: ValveOutStatus
+      Id: g=3e85bac6d278c73aefbe06a72c855a15
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f5efbd1d9371b4826eec6da2117dda4f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ValveOutStatus"
+      - Name: Quality
+        Id: g=f28b4276d67c501e7b44ce622d26fc0e
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=5c4ace540d6c88a207b7f126cc44ed11
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: ValveOutCmd
+      Id: g=79c7101957466cf6c0379acfa65ced3a
+      Type: EthernetIPDriverTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3ffa124f8f07cdfba7808d2524e5db64
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ValveOutCmd"
+      - Name: Quality
+        Id: g=15dfb8d492daf0eda171f2602f7b1b12
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=469f03271f88a61b807a23f81df5e601
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: Level
+      Id: g=ac8f63957f47afda04062580d0989389
+      Type: EthernetIPDriverTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=11a2cd8e64a028f525acc2a0d6a90728
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Level"
+      - Name: Quality
+        Id: g=26537f398d0f9b4642b0b7ce5532b3ec
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=df121d76c7394466bff0c54a19448f41
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
+    - Name: SetPoint
+      Id: g=1adf50a9cbcf129d0c92dc4634e9eca7
+      Type: EthernetIPDriverTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=73e61b0dcd04cf2bd24b0e7bf964ebef
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SetPoint"
+      - Name: Quality
+        Id: g=0947558918c376304f9711507c6f4678
+        Type: BaseDataVariableType
+        DataType: ns=31;Quality
+        AccessLevel: Read
+        Value: 0
+      - Name: OperationCode
+        Id: g=086da738084431ac0ab94bb9ceee1af9
+        Type: BaseDataVariableType
+        DataType: TagOperationCode
+        AccessLevel: Read
+        Value: -2144272384
