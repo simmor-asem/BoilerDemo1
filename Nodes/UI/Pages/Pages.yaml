@@ -6670,7 +6670,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 53.0
+      Value: 160.0
     - Name: LeftMargin
       Id: g=7b48b1cd55164e2e3f1d23a5f68155e7
       Type: BaseVariableType
