@@ -1415,13 +1415,13 @@ Children:
     Id: g=13ad714338fd3533658f2358e9a80614
     Type: Alias
     DataType: NodeId
-    Value: {"IdType":1,"Id":"Demo.BoilerDemo.Boiler1","Namespace":5}
+    Value: {"IdType":1,"Id":"Demo.BoilerDemo.Boiler1","Namespace":78}
     Children:
     - Name: Kind
       Id: g=58d84b04dc868f98f238d22c6f953102
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1003,"Namespace":5}
+      Value: {"Id":1003,"Namespace":78}
   - Name: MainTank1Alias
     Id: g=9875342b272825a69f9b4be9099ddb00
     Type: Alias
@@ -6670,13 +6670,13 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 160.0
+      Value: 63.0
     - Name: LeftMargin
       Id: g=7b48b1cd55164e2e3f1d23a5f68155e7
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 259.0
+      Value: 660.0
 - Name: Data
   Id: g=1b0dc70d5d42c09a70acec1c917ca5d0
   Supertype: BasePage
